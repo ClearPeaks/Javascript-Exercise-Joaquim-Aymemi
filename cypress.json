@@ -1,0 +1,15 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cypress-io/cypress/develop/cli/schema/cypress.schema.json",
+
+  "baseUrl": "http://localhost:8080",
+
+  "fileServerFolder": "e2e/cypress",
+  "fixturesFolder": "e2e/cypress/fixtures",
+  "integrationFolder": "e2e/cypress/integration",
+  "pluginsFile": "e2e/cypress/plugins/index.js",
+  "screenshotsFolder": "e2e/cypress/screenshots",
+  "supportFile": "e2e/cypress/support/index.js",
+  "videosFolder": "e2e/cypress/videos",
+
+  "video": false
+}

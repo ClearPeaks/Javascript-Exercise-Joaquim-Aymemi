@@ -1,0 +1,28 @@
+// Main styles
+$header-bg: black;
+$header-text-color: white;
+$header-height: 90px;
+
+$footer-bg: black;
+$footer-text-color: lightgrey;
+$footer-height: 30px;
+
+$body-bg: white !default;
+$text-color: #212529 !default;
+$text-secondary-color: white;
+$border-radius-size: 6px;
+
+// Colors
+$primary-color: #00adb0;
+$secondary-color: #00494a;
+$highlight-color: #15c4c7;
+$border-color: lightgrey;
+$error-color: red;
+
+// Text
+$font-family-sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$font-family-base: $font-family-sans-serif !default;
+$font-size-base: 1rem !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 600 !default;
+$line-height-base: 1.5 !default;

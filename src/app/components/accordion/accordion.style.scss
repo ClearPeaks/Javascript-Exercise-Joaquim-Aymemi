@@ -1,0 +1,99 @@
+@import '../../../assets/styles/variables';
+
+.accordion {
+  position: relative;
+  padding: 1em;
+  margin-top: 0px;
+
+  dt {
+    padding: 1em 1em 1em 2em;
+    cursor: pointer;
+    font-weight: 700;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    word-break: break-word;
+    transition: background-color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    border-bottom: solid $secondary-color 1px;
+  }
+
+  dt:only-of-type {
+    border-radius: $border-radius-size;
+    border-width: 1px;
+  }
+
+  dt:not(:only-of-type):first-of-type {
+    border-radius: $border-radius-size $border-radius-size 0px 0px;
+    border-width: 1px;
+  }
+
+  dt:not(:only-of-type):last-of-type:not(.acc_title_hidden).acc_title_active {
+    border-radius: 0px;
+  }
+
+  dt:not(:only-of-type):last-of-type:not(.acc_content_hidden) {
+    border-radius: 0px 0px $border-radius-size $border-radius-size;
+    border-width: 0px 1px 1px 1px;
+  }
+
+  dd {
+    background-color: $body-bg;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-inline-start: 0px;
+    padding: 1em 2em 1em 2em;
+    word-break: break-word;
+    overflow: hidden;
+
+    > p {
+      text-align: justify;
+    }
+  }
+}
+
+.acc_title {
+  border-width: 0px 1px 1px 1px;
+
+  &:before {
+    content: '+';
+    font-size: 1.5em;
+    line-height: 1em;
+    font-weight: 700;
+    float: right;
+    transition: transform 0.3s ease-in-out;
+  }
+  &:hover {
+    background-color: $primary-color;
+    color: $text-secondary-color;
+  }
+}
+
+.acc_title_active {
+  background-color: $primary-color;
+  color: white !important;
+  &:before {
+    display: inline-block;
+    padding-right: 3px;
+    transform: rotate(45deg);
+    vertical-align: middle;
+  }
+}
+
+.acc_content_hidden {
+  padding: 0px !important;
+  > div {
+    max-height: 0px;
+    overflow: hidden;
+  }
+}
+
+.acc_content_active {
+  display: block;
+  border: solid lightgrey;
+  border-width: 0px 1px 1px 1px;
+  > div {
+    max-height: 3000px;
+    transition: max-height 2s;
+  }
+}

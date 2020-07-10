@@ -1,0 +1,22 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "standard",
+        "plugin:cypress/recommended"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "rules": {
+        "semi": "off",
+        "comma-dangle": "off",
+        "space-before-function-paren": "off",
+        "accessor-pairs": "warn",
+        "no-unused-vars": "warn"
+        
+    }
+}

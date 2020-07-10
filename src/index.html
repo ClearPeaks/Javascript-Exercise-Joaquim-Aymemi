@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body>
+    <header>
+        <h1>ClearPeaks JavaScript Accordion Exercise</h1>
+    </header>
+
+    <section>
+        <div class="sections_content">
+            <div class="sections_accordion">
+                <dl is="app-accordion">
+                    <dt>
+                        This is a fixed Section
+                    </dt>
+                    <dd>
+                        <div>This sections is always displayed.</div>
+                    </dd>
+                </dl>
+            </div>
+            <div class="sections_form">
+                <div class="form_group">
+                    <label for="section-title">Title: </label>
+                    <input class="form_control" type="text" name="section-title" required maxlength="300" />
+                    <span class="error"></span>
+                </div>
+                <div class="form_group">
+                    <label for="section-content">Content: </label>
+                    <textarea name="section-content" class="form_control" rows="8" required maxlength="2000"></textarea>
+                    <span class="error"></span>
+                </div>
+                <button class="button" type="button" onclick="app.addSection()">Add Section</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span>
+            Joaquim Aymemí Casanovas, Reus 2020
+        </span>
+    </footer>
+</body>
+
+</html>
