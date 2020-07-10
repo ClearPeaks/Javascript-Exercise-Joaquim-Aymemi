@@ -1,3 +1,19 @@
+## :blue_book: Scripts
+The project provides several scripts to help in the development cycle:
+### server  
+Starts the json-server.
+### start
+Starts both the json-server and the webpack dev-server in development mode, and opens the application in the browser.
+### start-no-browser
+Starts both servers in in headless mode.
+### e2e:open 
+Starts both servers in headless mode and opens the Cypress suite.
+### e2e:run
+Starts both servers in headless mode and runs the Cypress tests inside the terminal.
+### build
+Runs webpack's production mode build configuration.
+
+
 ## 🚀 JavaScript Exercise
 
 We want to create an accordion displaying only the content of a section at the same time.
